@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 2 Activity</title>
+
+    <!-- Include your CSS and JavaScript files here -->
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        video {
+            border-radius: 25px;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0px 50px;
+            font-size: large;
+        }
+
+        footer {
+            margin: 30px 0px;
+        }
+
+        form {
+            max-width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .content-center {
+            margin: 0 auto;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 columns with equal width */
+            gap: 20px;
+            /* Adjust the gap between grid items */
+            margin: 50px;
+        }
+
+        .product {
+            text-align: center;
+        }
+
+        .product img {
+            margin: 0 auto;
+            border-radius: 25px;
+            opacity: 1.0;
+            /* Initial opacity for the images */
+        }
+
+        .product img:hover {
+            opacity: 0.5;
+            /* Increased opacity on hover */
+        }
+
+        .product p,
+        .product h3 {
+            margin: 0 auto;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="text-center">
+        <!-- Add your logo or other header content here -->
+        <img src="images/stickerclub Logo.png" width="250" height="auto">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="text-center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <hr /><br />
+
+    <!-- Video -->
+    <section class="text-center">
+        <video width="640" height="360" controls>
+            <source src="images/Journal Vid Shopee1.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="text-center">
+        <h2>Best Sellers</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <!-- Product details and image -->
+                <img src="images/39.png" width="250" height="auto">
+                <h3>NewJeans</h3>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <!-- Product details and image -->
+                <img src="images/33.png" width="250" height="auto">
+                <h3>Jujutsu Kaisen</h3>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <!-- Product details and image -->
+                <img src="images/45.png" width="250" height="auto">
+                <h3>Pinoy Stickers 3.0</h3>
+            </div>
+        </div>
+        <button>View More</button>
+    </section>
+    <br />
+    <hr /><br />
+
+    <!-- Footer -->
+    <footer>
+        <div class="product-grid">
+            <div class="footer-column">
+                <!-- Column 1 for Contact Info -->
+                <strong>Contact Information</strong>
+                <address>
+                    Email: kam0069@dlsud.edu.ph
+                </address>
+                <br />
+                <p>Fill out this form and we’ll get back to you right away.
+                </p>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Your Name" id="name" />
+
+                    <label for="email">Email Address</label>
+                    <input type="email" placeholder="youremail@mail.com" id="email" />
+
+                    <label for="pw">Message</label>
+                    <input type="message" id="ms" />
+                </form>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="footer-column">
+                <!-- Column 2 for Quick Links -->
+                <strong>Quick Links</strong>
+                <li><a href="https://www.instagram.com/stickerclubph">Instagram</a></li>
+                <li><a href="https://www.lazada.com.ph/shop/sticker-club/">Lazada</a></li>
+                <li><a href="https://shopee.ph/stickerclub">Shopee</a></li>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="footer-column">
+                <!-- Column 3 for Thank You Message -->
+                <strong>Thank you!</strong>
+                <br />
+                <img src="images/stickerclub Logo - Final PNG.png" width="200" height="auto">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
